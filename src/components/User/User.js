@@ -11,10 +11,10 @@ const User = (props) => {
         <div className='User'>
             <img src={picture.large} alt="" />
             <div>
-                <p>Name: {fullName}</p>
+                <p className='text-primary'>Name: {fullName}</p>
                 <p>Phone Number: {mobile}</p>
-                <button onClick={showPhone}>Show Phone Number</button>
-                <button onClick={() => joinTeam(fullName)}>Add to Team</button>
+                <button className='btn btn-secondary' onClick={showPhone}>Show Phone Number</button>
+                <button className='btn btn-secondary  ms-2' onClick={() => joinTeam(fullName)}>Add to Team</button>
             </div>
         </div>
     );
